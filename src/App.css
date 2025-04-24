@@ -21,7 +21,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: blakc;
+
 }
 
 .App-link {
@@ -35,4 +36,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.NavbarBrand{
+  color: #929394;
+}
+
+.clase:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* sombra más fuerte al pasar el cursor */
 }
