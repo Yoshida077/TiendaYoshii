@@ -13,7 +13,7 @@ function RenderMenuItem({ clothes, onClick }) {
 }
 
 const Menu = (props) => {
-    const menu = props.dishes.map((clothes) => {
+    const menu = props.clothes.map((clothes) => {
         return (
             <div key={clothes.id} className="col-12 col-sm-3">
                 <RenderMenuItem clothes={clothes} onClick={props.onClick} />

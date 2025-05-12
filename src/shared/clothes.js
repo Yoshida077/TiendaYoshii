@@ -6,19 +6,19 @@ export const CLOTHES = [
         category: 'postres',
         label: 'Frío',
         price: '4.99',
-        description: 'Torta de frutos rojos',
+        description: 'Conjunto de ropa y accesorios masculinos',
         comments: [
             {
                 id: 0,
                 rating: 5,
-                comment: "Me encanta este postre, es mi favorito",
+                comment: "Me encanta",
                 author: "Juan",
                 date: "2012-10-16T17:57:28.556094Z"
             },
             {
                 id: 1,
                 rating: 4,
-                comment: "Muy bueno el helado que lleva, la torta es muy rica",
+                comment: "Muy bueno ",
                 author: "Pedro",
                 date: "2014-06-16T17:57:28.556094Z"
             },
@@ -52,7 +52,7 @@ export const CLOTHES = [
         category: 'fuerte',
         label: 'caliente',
         price: '1.99',
-        description: 'Pasta italiana',
+        description: 'Conjunto de ropa y accesorios femeninos',
         comments: [
             {
                 id: 0,
@@ -70,7 +70,7 @@ export const CLOTHES = [
         category: 'rapida',
         label: 'caliente',
         price: '1.99',
-        description: 'Hamburguesa de carne con queso y lechuga',
+        description: 'Outfit Elegante xd|',
         comments: [
             {
                 id: 0,
@@ -88,7 +88,7 @@ export const CLOTHES = [
         category: 'rapida',
         label: 'caliente',
         price: '2.99',
-        description: 'Pincho de carne con ensalada',
+        description: 'Outfit inspirado en minecraft',
         comments: [
             {
                 id: 0,

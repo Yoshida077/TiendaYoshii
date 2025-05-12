@@ -1,15 +1,20 @@
 import React, { Component } from "react";
 import './App.css';
-import { Navbar, NavbarBrand } from 'reactstrap'
-import Menu from './components/menuComponent';
 import Main from './components/mainComponent';
+import Header from './components/headerComponent';
+import Footer from "./components/footerComponent";
+
 
 class App extends Component {
   render() {
     return (
       <div>
+        <Header/>
+        <h1>Tienda Yoshii</h1>
         <Main />
+        <Footer />
       </div>
+        
     );
   }
 }

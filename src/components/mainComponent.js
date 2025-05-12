@@ -1,38 +1,32 @@
-import React, { Component } from "react";
-import {Navbar, NavbarBrand } from 'reactstrap'
-import Menu from './menuComponent';
-import { CLOTHES } from '../shared/clothes';
-import DetalleComponent from "./detalleComponent";
+    import React, { Component } from "react";
+    import Menu from './menuComponent';
+    import { CLOTHES } from '../shared/clothes';
+    import DetalleComponent from "./detalleComponent";
 
-class Main extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            dishes: CLOTHES,
-            selectedDish: null
-        };
-    }
+    class Main extends Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                clothes: CLOTHES,
+                selectedclothes: null
+            };
+        }
 
-    onDishSelect(dishId) {
-        this.setState({ selectedDish: dishId });
-    }
+        onDishSelect(clothesID) {
+            this.setState({ selectedclothes: clothesID });
+        }
 
-    render() {
-        return (
-            <div>
-                <Navbar color="dark" expand="md">
+        render() {
+            return (
+                <div>
                     <div className="container">
-                        <NavbarBrand >Tienda Yoshii</NavbarBrand>
+                        <Menu clothes={this.state.clothes}
+                            onClick={(clothesID) => this.onDishSelect(clothesID)} />
+                        <DetalleComponent c={this.state.clothes.filter((estilo) => estilo.id === this.state.selectedclothes)[0]} />
                     </div>
-                </Navbar>
-                <div className="container">
-                    <Menu dishes={this.state.dishes}
-                        onClick={(dishId) => this.onDishSelect(dishId)} />
-                    <DetalleComponent dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
                 </div>
-            </div>
-        );
+            );
+        }
     }
-}
 
-export default Main;
+    export default Main;
