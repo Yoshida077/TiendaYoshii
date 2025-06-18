@@ -23,16 +23,23 @@ class Header extends Component {
       <>
         {/* NAVBAR */}
         <Navbar color="dark" dark expand="md">
-          <Container>
-            <NavbarToggler onClick={this.toggleNavbar} />
-            <NavbarBrand tag={Link} to="/">
-              <img
-                src="/assets/images/logoY.png"
-                alt="Tienda Yoshii"
-                style={{ width: '40px' }}
-              />
-            </NavbarBrand>
+          <Container className="d-flex justify-content-between align-items-center">
+            {/* LOGO Y NOMBRE */}
+            <div className="d-flex align-items-center">
+              <NavbarBrand tag={Link} to="/" className="d-flex align-items-center">
+                <img
+                  src="/assets/images/logoY.png"
+                  alt="Tienda Yoshii"
+                  style={{ width: '40px', marginRight: '10px' }}
+                />
+                <span className="navbar-text h5 mb-0 text-light">Home</span>
+              </NavbarBrand>
+            </div>
 
+            {/* BOTÓN TOGGLER */}
+            <NavbarToggler onClick={this.toggleNavbar} />
+
+            {/* LINKS */}
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
@@ -57,8 +64,7 @@ class Header extends Component {
             </Collapse>
           </Container>
         </Navbar>
-
-        {/* ENCABEZADO CON NOMBRE DE LA TIENDA */}
+      {/* ENCABEZADO CON NOMBRE DE LA TIENDA */}
         <div className="jumbotron text-center">
           <div className="container">
             <h1>Tienda Yoshii</h1>
@@ -69,5 +75,6 @@ class Header extends Component {
     );
   }
 }
+
 
 export default Header;
