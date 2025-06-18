@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, Container } from 'reactstrap';
-import { BrowserRouter, Link } from 'react-router-dom';
+import {
+  Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, Container
+} from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
   constructor(props) {
@@ -18,19 +20,21 @@ class Header extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <>
+        {/* NAVBAR */}
         <Navbar color="dark" dark expand="md">
           <Container>
-
             <NavbarToggler onClick={this.toggleNavbar} />
-            
+            <NavbarBrand tag={Link} to="/">
+              <img
+                src="/assets/images/logoY.png"
+                alt="Tienda Yoshii"
+                style={{ width: '40px' }}
+              />
+            </NavbarBrand>
+
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <NavbarBrand tag={Link} to="/">
-              <img src="/assets/images/logoY.png" alt="Tienda Yoshii" style={{ width: '40px' }} />
-            </NavbarBrand>
-                </NavItem>
                 <NavItem>
                   <Link to="/conjuntos" className="nav-link">Conjuntos</Link>
                 </NavItem>
@@ -53,7 +57,15 @@ class Header extends Component {
             </Collapse>
           </Container>
         </Navbar>
-      </BrowserRouter>
+
+        {/* ENCABEZADO CON NOMBRE DE LA TIENDA */}
+        <div className="jumbotron text-center">
+          <div className="container">
+            <h1>Tienda Yoshii</h1>
+            <p className="lead">¡Moda con estilo y actitud!</p>
+          </div>
+        </div>
+      </>
     );
   }
 }
