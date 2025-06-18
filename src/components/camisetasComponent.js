@@ -1,0 +1,61 @@
+import React from "react";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  CardBody,
+  CardImg,
+  CardTitle,
+  CardText,
+  Button,
+} from "reactstrap";
+
+const camisetas = [
+  {
+    id: 1,
+    nombre: "Camiseta Blanca Clásica",
+    descripcion: "Ideal para cualquier ocasión.",
+    imagen: "/assets/images/camiseta1.jpeg",
+    precio: "$15.00",
+  },
+  {
+    id: 2,
+    nombre: "Camiseta Estampada",
+    descripcion: "Con diseño moderno y juvenil.",
+    imagen: "/assets/images/camiseta2.jpeg",
+    precio: "$18.00",
+  },
+  {
+    id: 3,
+    nombre: "Camiseta Negra Básica",
+    descripcion: "Versátil y cómoda para el día a día.",
+    imagen: "/assets/images/camiseta3.jpeg",
+    precio: "$16.50",
+  },
+];
+
+const CamisetasComponent = () => {
+  return (
+    <Container className="py-5">
+      <h2 className="mb-4 text-center">Camisetas</h2>
+      <Row>
+        {camisetas.map((item) => (
+          <Col md="6" lg="4" className="mb-4" key={item.id}>
+            <Card className="h-100">
+              <CardImg top src={item.imagen} alt={item.nombre} />
+              <CardBody>
+                <CardTitle tag="h5">{item.nombre}</CardTitle>
+                <CardText>{item.descripcion}</CardText>
+                <CardText className="text-primary fw-bold">{item.precio}</CardText>
+                <Button color="dark">Agregar al carrito</Button>
+              </CardBody>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  );
+};
+
+export default CamisetasComponent;

@@ -7,6 +7,7 @@ import Header from "./headerComponent";
 import DetalleComponent from "./detalleComponent";
 import Footer from "./footerComponent";
 import ConjuntosComponent from "./conjuntosComponent";
+import CamisetasComponent from "./camisetasComponent";
 
 class Main extends Component {
   constructor(props) {
@@ -46,6 +47,7 @@ class Main extends Component {
           <Route path="/conjuntos" element={<ConjuntosComponent />} />
 
           {/* Otras rutas podrían ir aquí */}
+          <Route path="/camisetas" element={<CamisetasComponent />} />
         </Routes>
 
         <Footer />
