@@ -52,7 +52,3 @@ code {
   align-items: center;
   gap: 1rem; /* Opcional: separa los ítems */
 }
-
-.container {
-  width: 100%;
-}
