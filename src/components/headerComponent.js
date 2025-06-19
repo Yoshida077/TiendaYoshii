@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import {
-  Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, Container
+  Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, Container, Badge
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa'; // ← ícono de carrito
 
 class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      cartItemCount: 2 // ← puedes cambiar este número para simular cantidad
     };
   }
 
@@ -41,7 +43,7 @@ class Header extends Component {
 
             {/* LINKS */}
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav className="ml-auto d-flex align-items-center" navbar>
                 <NavItem>
                   <Link to="/conjuntos" className="nav-link">Conjuntos</Link>
                 </NavItem>
@@ -60,11 +62,22 @@ class Header extends Component {
                 <NavItem>
                   <Link to="/accesorios" className="nav-link">Accesorios</Link>
                 </NavItem>
+
+                {/* CARRITO */}
+                <NavItem className="nav-link position-relative">
+                  <Link to="/carrito" className="text-light">
+                    <FaShoppingCart size={20} />
+                    <Badge color="danger" pill className="position-absolute top-0 start-100 translate-middle">
+                      {this.state.cartItemCount}
+                    </Badge>
+                  </Link>
+                </NavItem>
               </Nav>
             </Collapse>
           </Container>
         </Navbar>
-      {/* ENCABEZADO CON NOMBRE DE LA TIENDA */}
+
+        {/* ENCABEZADO */}
         <div className="jumbotron text-center">
           <div className="container">
             <h1>Tienda Yoshii</h1>
@@ -75,6 +88,5 @@ class Header extends Component {
     );
   }
 }
-
 
 export default Header;

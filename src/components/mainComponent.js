@@ -12,6 +12,7 @@ import PantalonesComponent from "./pantalonesComponent";
 import ChompasComponent from "./chompasComponent";
 import ZapatosComponent from "./zapatosComponent";
 import AccesoriosComponent from "./accesoriosComponent";
+import CarritoComponent from "./CarritoComponent";
 
 class Main extends Component {
   constructor(props) {
@@ -56,6 +57,7 @@ class Main extends Component {
           <Route path="/chompas" element={<ChompasComponent />} />
           <Route path="/zapatos" element={<ZapatosComponent />} />
           <Route path="/accesorios" element={<AccesoriosComponent />} />
+          <Route path="/carrito" element={<CarritoComponent />} />
         </Routes>
 
         <Footer />
