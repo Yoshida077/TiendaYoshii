@@ -8,6 +8,10 @@ import DetalleComponent from "./detalleComponent";
 import Footer from "./footerComponent";
 import ConjuntosComponent from "./conjuntosComponent";
 import CamisetasComponent from "./camisetasComponent";
+import PantalonesComponent from "./pantalonesComponent";
+import ChompasComponent from "./chompasComponent";
+import ZapatosComponent from "./zapatosComponent";
+import AccesoriosComponent from "./accesoriosComponent";
 
 class Main extends Component {
   constructor(props) {
@@ -48,6 +52,10 @@ class Main extends Component {
 
           {/* Otras rutas podrían ir aquí */}
           <Route path="/camisetas" element={<CamisetasComponent />} />
+          <Route path="/pantalones" element={<PantalonesComponent />} />
+          <Route path="/chompas" element={<ChompasComponent />} />
+          <Route path="/zapatos" element={<ZapatosComponent />} />
+          <Route path="/accesorios" element={<AccesoriosComponent />} />
         </Routes>
 
         <Footer />
