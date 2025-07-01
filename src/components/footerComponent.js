@@ -10,8 +10,8 @@ const Footer = () => {
           <div className="col-4 offset-1 col-sm-2">
             <h5>Enlaces</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-light">Inicio</a></li>
-              <li><a href="#" className="text-light">Contacto</a></li>
+              <li><Link to="./home">Inicio</Link></li>
+              <li><Link to="./contact">Contacto</Link></li>
               <li><a href="#" className="text-light">Sobre nosotros</a></li>
             </ul>
           </div>

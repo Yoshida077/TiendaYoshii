@@ -12,8 +12,8 @@ function RenderMenuItem({ clothes, onClick }) {
     );
 }
 
-const Menu = (props) => {
-    const menu = props.clothes.map((clothes) => {
+const Home = (props) => {
+    const home = props.clothes.map((clothes) => {
         return (
             <div key={clothes.id} className="col-12 col-sm-3">
                 <RenderMenuItem clothes={clothes} onClick={props.onClick} />
@@ -23,10 +23,10 @@ const Menu = (props) => {
     return (
         <div className="container">
             <div className="row">
-                {menu}
+                {home}
             </div>
         </div>
     );
 }
 
-export default Menu;
+export default Home;

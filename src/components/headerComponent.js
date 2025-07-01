@@ -28,7 +28,7 @@ class Header extends Component {
           <Container className="d-flex justify-content-between align-items-center">
             {/* LOGO Y NOMBRE */}
             <div className="d-flex align-items-center">
-              <NavbarBrand tag={Link} to="/" className="d-flex align-items-center">
+              <NavbarBrand tag={Link} to="/home" className="d-flex align-items-center">
                 <img
                   src="/assets/images/logoY.png"
                   alt="Tienda Yoshii"
