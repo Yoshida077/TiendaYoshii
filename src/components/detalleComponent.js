@@ -4,7 +4,7 @@ import { Card, CardBody, CardTitle, CardImg, CardText } from "reactstrap";
 function RenderClothes({ c }) {
     return (
         <Card>
-            <CardImg width="60%" src={c.image} alt={c.name} />
+            <CardImg width="100%" src={c.image} alt={c.name} />
             <CardBody>
                 <CardTitle tag="h5">{c.name}</CardTitle>
                 <CardText>{c.description}</CardText>

@@ -42,7 +42,8 @@ export const CLOTHES = [
                 comment: "Mala",
                 author: "Ana",
                 date: "2018-06-16T17:57:28.556094Z"
-            }
+            },
+            
         ]
     },
     {
