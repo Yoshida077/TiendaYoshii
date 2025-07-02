@@ -102,5 +102,143 @@
       "author": "Juan Olive",
       "date": "2012-01-16T17:57:28.556094Z"
     }
-  ]
+  ],
+  "conjuntos": [
+    {
+      "id": 1,
+      "nombre": "Conjunto Deportivo",
+      "descripcion": "Cómodo y elegante para el día a día.",
+      "imagen": "/assets/images/conjunto1.jpeg",
+      "precio": "$45.00"
+    },
+    {
+      "id": 2,
+      "nombre": "Conjunto Casual",
+      "descripcion": "Perfecto para una salida informal.",
+      "imagen": "/assets/images/conjunto2.jpg",
+      "precio": "$55.00"
+    },
+    {
+      "id": 3,
+      "nombre": "Conjunto pepa",
+      "descripcion": "Perfecto para una salida pepa.",
+      "imagen": "/assets/images/conjunto3.jpeg",
+      "precio": "$75.00"
+    }
+  ],
+  "camisetas": [
+    {
+      "id": 1,
+      "nombre": "Camiseta Blanca Clásica",
+      "descripcion": "Ideal para cualquier ocasión.",
+      "imagen": "/assets/images/camiseta1.jpeg",
+      "precio": "$15.00"
+    },
+    {
+      "id": 2,
+      "nombre": "Camiseta Estampada",
+      "descripcion": "Con diseño moderno y juvenil.",
+      "imagen": "/assets/images/camiseta2.jpeg",
+      "precio": "$18.00"
+    },
+    {
+      "id": 3,
+      "nombre": "Camiseta Negra Básica",
+      "descripcion": "Versátil y cómoda para el día a día.",
+      "imagen": "/assets/images/camiseta3.jpeg",
+      "precio": "$16.50"
+    }
+    ],
+  "pantalones": [
+    {
+      "id": 1,
+      "nombre": "Pantalón Jeans Clásico",
+      "descripcion": "Perfecto para un look casual.",
+      "imagen": "/assets/images/pantalon1.jpeg",
+      "precio": "$30.00"
+    },
+    {
+      "id": 2,
+      "nombre": "Pantalón Cargo Verde",
+      "descripcion": "Ideal para actividades al aire libre.",
+      "imagen": "/assets/images/pantalon2.jpeg",
+      "precio": "$35.00"
+    },
+    {
+      "id": 3,
+      "nombre": "Pantalón Deportivo Negro",
+      "descripcion": "Cómodo y funcional para el día a día.",
+      "imagen": "/assets/images/pantalon3.jpeg",
+      "precio": "$28.00"
+    }
+  ],
+  "chompas": [
+  {
+    "id": 1,
+    "nombre": "Chompa de Lana",
+    "descripcion": "Ideal para el clima frío, suave y abrigada.",
+    "imagen": "/assets/images/chompa1.jpeg",
+    "precio": "$40.00"
+  },
+  {
+    "id": 2,
+    "nombre": "Chompa Deportiva",
+    "descripcion": "Perfecta para entrenar o usar de forma casual.",
+    "imagen": "/assets/images/chompa2.jpeg",
+    "precio": "$38.00"
+  },
+  {
+    "id": 3,
+    "nombre": "Chompa con Capucha",
+    "descripcion": "Cómoda, con estilo urbano y moderno.",
+    "imagen": "/assets/images/chompa3.jpeg",
+    "precio": "$42.00"
+  }
+],"zapatos": [
+  {
+    "id": 1,
+    "nombre": "Zapatillas Urbanas",
+    "descripcion": "Estilo casual, ideales para uso diario.",
+    "imagen": "/assets/images/zapato1.jpeg",
+    "precio": "$50.00"
+  },
+  {
+    "id": 2,
+    "nombre": "Zapatos de Cuero",
+    "descripcion": "Elegantes y resistentes para ocasiones formales.",
+    "imagen": "/assets/images/zapato2.jpeg",
+    "precio": "$65.00"
+  },
+  {
+    "id": 3,
+    "nombre": "Zapatillas Deportivas",
+    "descripcion": "Comodidad y rendimiento para actividades físicas.",
+    "imagen": "/assets/images/zapato3.jpeg",
+    "precio": "$55.00"
+  }
+],
+"accesorios": [
+  {
+    "id": 1,
+    "nombre": "Gorra Clásica",
+    "descripcion": "Perfecta para el sol y con estilo urbano.",
+    "imagen": "/assets/images/accesorio1.jpeg",
+    "precio": "$15.00"
+  },
+  {
+    "id": 2,
+    "nombre": "Mochila Moderna",
+    "descripcion": "Funcional y con mucho espacio.",
+    "imagen": "/assets/images/accesorio2.jpeg",
+    "precio": "$35.00"
+  },
+  {
+    "id": 3,
+    "nombre": "Reloj Deportivo",
+    "descripcion": "Resistente al agua y multifuncional.",
+    "imagen": "/assets/images/accesorio3.jpeg",
+    "precio": "$40.00"
+  }
+]
+
 }

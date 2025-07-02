@@ -11,14 +11,14 @@ import {
   Button,
 } from "reactstrap";
 
-const AccesoriosComponent = (props) => {
-  const accesorios = props.accesorios || [];
+const AccesoriosComponent = ({ accesorios }) => {
+  const data = accesorios || [];
 
   return (
     <Container className="py-5">
       <h2 className="mb-4 text-center">Accesorios</h2>
       <Row>
-        {accesorios.map((item) => (
+        {data.map((item) => (
           <Col md="6" lg="4" className="mb-4" key={item.id}>
             <Card className="h-100">
               <CardImg top src={item.imagen} alt={item.nombre} />

@@ -1,4 +1,3 @@
-// components/ChompasComponent.js
 import React from "react";
 import {
   Container,
@@ -13,7 +12,7 @@ import {
 } from "reactstrap";
 
 const ChompasComponent = ({ chompas }) => {
-  const data = chompas || []; // por si acaso no llegan props
+  const data = chompas || [];
 
   return (
     <Container className="py-5">
